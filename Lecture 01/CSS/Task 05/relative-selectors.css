@@ -1,0 +1,50 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section p{
+    color: darkslategray;
+}
+
+ul.main-list > li{
+    font-weight: bold;
+}
+
+article.highlight + article{
+    background-color: lightcoral;
+}
+
+h2.trigger ~ p{
+    color: royalblue;
+}
+
+ li.special + li a {
+    color: green;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: navy;
+}
+
+.special {
+    color: tomato;
+}

@@ -1,0 +1,42 @@
+/* Descendant Selector */
+nav ul li a {
+    color: navy;
+    text-decoration: none;
+}
+
+div.content > section.highlight > article{
+    background-color: lightblue;
+}
+
+section + header{
+    background-color: #f0f0f0;
+}
+
+/* General Sibling Combinator */
+section.highlight ~ footer {
+    background-color: lightgrey;
+}
+
+/* Attribute Selector */
+.gallery img[src^="https://images.unsplash.com"] {
+    border: 10px solid red;
+}
+
+nav ul li:first-child{
+    font-weight: bold;
+}
+
+nav ul li:last-child{
+    font-style: italic  ;
+}
+
+/* Pseudo-element Selector */
+section.highlight h2::before {
+    content: ">> ";
+    color: darkred;
+}
+
+section.highlight h2::after {
+    content: " <<";
+    color: darkred;
+}
