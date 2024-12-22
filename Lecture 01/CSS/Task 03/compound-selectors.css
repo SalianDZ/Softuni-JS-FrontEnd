@@ -1,0 +1,33 @@
+p.text-highlight{
+    color: aqua;
+    font-size: 20px;  
+}
+
+div#special-box{
+    background-color: gold;
+    padding-top: 20px;
+}
+
+a.fancy[href="http://softuni.bg"]{
+    color: gold;
+    text-decoration: underline;
+}
+
+.important-item{
+color: aquamarine;
+}
+
+.important-item.special-highlight{
+   font-weight: bold;
+   font-style: italic; 
+   color: red;
+}
+
+a.fancy{
+    color: blue;
+}
+
+.subtitle.fancy
+{
+    color: blue;
+}
