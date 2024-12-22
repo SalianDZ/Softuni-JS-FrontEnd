@@ -1,0 +1,29 @@
+.highlight{
+background-color: aqua;
+}
+
+
+h1{
+    color: red;
+}
+
+p{
+    font-size: 20px;
+}
+
+#main-title{
+    color: blueviolet;
+}
+
+#special-paragraph
+{
+    font-style: italic;
+}
+
+ul{
+    list-style-type: georgian;
+}
+
+li{
+    color: bisque;
+}
