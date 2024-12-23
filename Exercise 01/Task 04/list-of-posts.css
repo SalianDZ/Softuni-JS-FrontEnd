@@ -1,0 +1,9 @@
+header p{
+    color: lightgrey;
+    font-style: italic;
+}
+
+header span{
+    font-weight: bold;
+    font-style: normal;
+}
