@@ -1,0 +1,28 @@
+body{
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+article{
+    max-width: 60ch;
+    background-color: white;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+    padding: 2em;
+    border-radius: 0.5em;
+}
+
+h1{
+    line-height: 1;
+    padding-bottom: 1rem;
+    font-size: 2em;
+}
+
+ul{
+    padding: 0 0 1.5em 1.5em;
+}
+
+p{
+    padding-bottom: 1.5em;
+}

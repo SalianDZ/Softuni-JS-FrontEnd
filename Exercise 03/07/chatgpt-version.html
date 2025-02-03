@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collapsible Tree View</title>
+  <style>
+    /* General styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    li {
+      position: relative;
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    /* Connecting lines */
+    ul ul {
+      border-left: 2px solid lightgrey;
+      margin-left: 10px;
+      padding-left: 10px;
+    }
+
+    li::before {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 0;
+      width: 10px;
+      height: 2px;
+      background-color: lightgrey;
+    }
+
+    li:first-child::before {
+      display: none;
+    }
+
+    li::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 9px;
+      bottom: -10px;
+      width: 2px;
+      background-color: lightgrey;
+    }
+
+    li:last-child::after {
+      height: 15px;
+    }
+
+    /* Collapsible sections */
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    input[type="checkbox"] + label {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+    }
+
+    input[type="checkbox"] + label::before {
+      content: "+";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+      background-color: green;
+      color: white;
+      border-radius: 50%;
+      font-size: 14px;
+      margin-right: 10px;
+      position: relative;
+      z-index: 1;
+    }
+
+    input[type="checkbox"]:checked + label::before {
+      content: "-";
+    }
+
+    input[type="checkbox"]:checked ~ ul {
+      display: block;
+    }
+
+    ul ul {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Collapsible & Expandable Tree View in HTML & CSS Only</h1>
+  <ul>
+    <li>
+      <input type="checkbox" id="giant-planets">
+      <label for="giant-planets">Giant planets</label>
+      <ul>
+        <li>
+          <input type="checkbox" id="gas-giants">
+          <label for="gas-giants">Gas giants</label>
+          <ul>
+            <li>Jupiter</li>
+            <li>Saturn</li>
+          </ul>
+        </li>
+        <li>
+          <input type="checkbox" id="ice-giants">
+          <label for="ice-giants">Ice giants</label>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</body>
+</html>

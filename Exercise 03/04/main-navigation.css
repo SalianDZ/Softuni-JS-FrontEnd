@@ -1,0 +1,31 @@
+body{
+    background-color: white;
+}
+
+header{
+    background-color: #eee;
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 0.3em;
+}
+
+li{
+    padding: 0.6em 1.2em;
+    color: orange;
+    background-color: white;
+    border-radius: 0.3em;
+    border: 1px solid #ccc;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 0.5em;
+    margin: 0.5em;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+}

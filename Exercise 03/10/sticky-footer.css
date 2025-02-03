@@ -1,0 +1,19 @@
+body
+{
+    min-height: 100dvh;
+    border: 2px solid green;
+    padding: 2em;
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+}
+
+body > *{
+    border: 2px solid blue;
+    padding: 1.5em;
+    border-radius: 0.3em;
+}
+
+main{
+    flex-grow: 1;
+}
