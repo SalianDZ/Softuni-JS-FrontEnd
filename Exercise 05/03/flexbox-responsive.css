@@ -11,7 +11,7 @@ body{
     padding: 1em;
     border-radius: 0.3em;
     max-width: 45em;
-    width: 100vw;
+    width: 80vw;
 }
 
 input{
@@ -54,11 +54,6 @@ button{
     form{
         flex-direction: column;
     }
-
-    .container{
-        max-width: 30em;
-    }
-
     .input-box{
         width: 100%;
     }
@@ -72,10 +67,6 @@ button{
 {
     .input-box{
         flex-direction: column;
-    }
-
-    .container{
-        max-width: 20em;
     }
 
     .name-input{

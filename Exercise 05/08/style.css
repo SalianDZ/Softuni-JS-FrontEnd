@@ -1,0 +1,83 @@
+/* Basic reset (optional) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Top bar styling */
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f99dbf; /* Pink background */
+    padding: 0.5rem 2rem;      /* Adjust as needed */
+    font-family: sans-serif;
+  }
+  
+  /* Left links: FAQs, Help, Support */
+  .left-links a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 0.5rem;
+    font-weight: 500;
+  }
+  
+  /* Optional separators (|) */
+  .left-links span {
+    color: #fff;
+  }
+  
+  /* Social icons on the top bar */
+  .social-icons a {
+    margin-left: 0.75rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  /* Main navigation area */
+  .main-nav {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    font-family: sans-serif;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Light shadow if desired */
+  }
+  
+  /* Logo styling */
+  .nav-logo a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #555; /* text color for “i” */
+  }
+  
+  .nav-logo a span {
+    color: #f99dbf; /* Pink color for “CREAM” */
+  }
+  
+  /* Navigation links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto; /* push the links to the right */
+  }
+  
+  .nav-links li {
+    margin-left: 1.5rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+  
+  /* Hover effect on nav links */
+  .nav-links a:hover {
+    color: #f99dbf;
+  }
+  

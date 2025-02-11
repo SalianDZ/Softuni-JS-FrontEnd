@@ -1,0 +1,53 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: white;
+    padding: 2em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2em);
+}
+
+fieldset{
+    border: 2px solid #ccc;
+    border-radius: 0.3em;
+    padding: 2em;
+}
+
+fieldset:not(:last-child){
+    margin-bottom: 2em;
+}
+
+fieldset legend{
+    padding: 0 1em;
+    font-weight: bold;
+}
+
+fieldset p {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+}
+
+input[type="radio"]{
+    appearance: none;
+    border: 2px solid darkorange;
+    background-color: orange;
+    border-radius:50%;
+    width: 2em;
+    aspect-ratio: 1/1;
+    position: relative;
+}
+
+input[type="radio"]:checked::after{
+    display: block;
+    content: '';
+    position: absolute;
+    inset: 0.2em;
+    background: red;
+    border-radius: inherit;
+}

@@ -1,0 +1,28 @@
+@media(width <= 600px){
+    nav img{
+        display: none;
+    }
+    
+    header nav{
+        justify-content: center;
+    }
+
+    .our-dogs ul {
+        gap: 40px;
+    }
+
+    .our-dogs ul li{
+        flex: 0 0 calc(50% - 40px);
+    }
+
+    .our-dogs ul li img{
+        width: 100%;
+        height: unset;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+
+    .helpNeed ul{
+        flex-direction: column;
+    }
+}
