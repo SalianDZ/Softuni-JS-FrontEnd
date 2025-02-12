@@ -39,7 +39,7 @@ body, input, textarea, table{
 }
 
 img{
-    width: 100%;
+    max-width: 100%;
     border-radius: 0.7em;
     display: block;
 }
