@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    box-sizing: border-box;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    min-height: 100dvh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F6F6F6;
+}
+
+body, input, textarea, table{
+    font: inherit;
+}
+
+.container{
+    width: 70%;
+    display: flex;
+    gap: 3em;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+h3{
+    color: #585858;
+    letter-spacing: 4px;
+    font-size: 16px;
+    width: 70%;
+    margin-bottom: 2em;
+    font-weight: 900;
+}
+
+.upper-forms{
+    display: flex;
+    gap: 1em;
+}
+
+.left-section input{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: #F6F6F6;
+    width: 50%;
+    font-size: 15px;
+}
+
+.left-section textarea{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding-top: 1em;
+    background-color: #F6F6F6;
+    font-size: 15px;
+}
+
+.left-section{
+    flex-basis: 60%;
+}
+
+.left-section button{
+    background-color: #585858;
+    color: white;
+    padding: 1.4em 2em;
+    font-weight: 900;
+    font-size: 9px;
+    border: none;
+    letter-spacing: 3px;
+    border-radius: 0.2em;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+.paragraph-container{
+    display: flex;
+    gap: 1.5em ;
+    color: #999;
+    font-size: 16px;
+}
+
+.paragraph-container span{
+    color: #585858;
+    text-decoration: underline;
+}
+
+.right-section{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.right-section ul{
+    display: flex;
+    list-style: none;
+    gap: 0.5em;
+}
+
+.right-section ul li{
+    padding: 0.4em 1em;
+    border: 1px solid #999;
+    border-radius: 0.2em;
+    text-align: center;
+}
+
+.right-section ul a{
+    text-decoration: none;
+    color:#585858;
+    font-size: 20px;
+}
+
+.right-section h3{
+    margin-bottom: 0.5em;
+}
