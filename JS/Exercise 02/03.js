@@ -1,8 +1,7 @@
-function names(input){
-    input.sort();
-    for (let i = 0; i < input.length; i++) {
-        console.log(`${i+1}.${input[i]}`);
-    }
+function sortAlphabeticallyAscending(names){    
+    names
+        .sort((a, b) => a.localeCompare(b))                                            
+        .forEach((name, index) => {
+            console.log(`${index + 1}.${name}`);
+        });     
 }
-
-names(["John", "Bob", "Christina", "Ema", "Salian", "Ile", "Milosh"]);
